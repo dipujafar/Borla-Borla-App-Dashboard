@@ -27,14 +27,13 @@ const UpdatePasswordModal = ({ open, setOpen }: TPropsType) => {
         }}
       >
         <div className="py-14">
-          <div
-            className="w-12 h-12 bg-main-color  absolute top-2 right-2 rounded-full cursor-pointer"
+         <div
+            className="w-10 h-10 bg-[#FF00001A]/10  absolute top-2 right-2 rounded-full cursor-pointer flex justify-center items-center"
             onClick={() => setOpen(false)}
           >
             <RiCloseLargeLine
               size={18}
-              color="#fff"
-              className="absolute top-1/3 left-1/3"
+              color="#E12728"
             />
           </div>
 
