@@ -14,10 +14,10 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Admin Dashboard | uJitsu",
-    template: "%s | uJitsu",
+    default: "Admin Dashboard | Borla Borla",
+    template: "%s | Borla Borla",
   },
-  description: "This is Official Application Dashboard for uJitsu",
+  description: "This is Official Application Dashboard for Borla Borla.",
 };
 
 export default function RootLayout({
