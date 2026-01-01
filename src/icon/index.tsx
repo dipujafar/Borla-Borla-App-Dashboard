@@ -88,3 +88,39 @@ export const CancelIcon = ({ className }: { className?: string }) => {
     </svg>
   );
 };
+
+
+export const IncreaseIcon = ({ className }: { className?: string }) => {
+  return (
+    <svg className={className} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <g clip-path="url(#clip0_1458_10224)">
+        <path d="M10.6666 4.66675H14.6666V8.66675" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M14.6667 4.66675L9.00004 10.3334L5.66671 7.00008L1.33337 11.3334" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+      <defs>
+        <clipPath id="clip0_1458_10224">
+          <rect width="16" height="16" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+export const DecreaseIcon = ({ className }: { className?: string }) => {
+  return (
+    <svg className={className} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <g clip-path="url(#clip0_1510_9096)">
+        <path d="M10.6666 11.3333H14.6666V7.33325" stroke="#E7000B" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M14.6667 11.3334L9.00004 5.66675L5.66671 9.00008L1.33337 4.66675" stroke="#E7000B" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+      <defs>
+        <clipPath id="clip0_1510_9096">
+          <rect width="16" height="16" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+
+
