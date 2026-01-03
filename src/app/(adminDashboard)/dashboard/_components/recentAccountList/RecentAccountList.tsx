@@ -115,7 +115,7 @@ const RecentAccountList = () => {
         Recent Account List
       </h1>
       <DataTable columns={columns} data={data}></DataTable>
-      <UserDetails open={open} setOpen={setOpen}></UserDetails>
+      <UserDetails open={open} setOpen={setOpen} typeUser="user"></UserDetails>
     </div>
   );
 };

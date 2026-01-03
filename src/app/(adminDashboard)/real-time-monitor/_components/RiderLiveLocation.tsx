@@ -11,32 +11,32 @@ const containerStyle = {
 }
 
 const center = {
-  lat: 13.0418,
-  lng: 80.2133,
+  lat: 23.72,
+  lng: 90.39,
 }
 
 // Mock data for riders
 const riders = [
-  { id: 1, lat: 13.045, lng: 80.21, name: "John Smith" },
-  { id: 2, lat: 13.042, lng: 80.218, name: "Sarah Johnson" },
-  { id: 3, lat: 13.038, lng: 80.215, name: "Mike Davis" },
-  { id: 4, lat: 13.048, lng: 80.22, name: "Emily Chen" },
-  { id: 5, lat: 13.04, lng: 80.205, name: "David Wilson" },
+  { id: 1, lat: 23.76, lng: 90.39, name: "John Smith" },
+  { id: 2, lat: 23.72, lng: 90.40, name: "Sarah Johnson" },
+  { id: 3, lat: 23.72, lng: 90.41, name: "Mike Davis" },
+  { id: 4, lat: 23.73, lng: 90.39, name: "Emily Chen" },
+  { id: 5, lat: 23.72, lng: 90.39, name: "David Wilson" },
 ]
 
 export function RiderLiveLocation() {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "YOUR_VALID_API_KEY_HERE", // Placeholder for API key
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!, // Placeholder for API key
   })
 
   const [map, setMap] = useState(null)
 
-  const onLoad = useCallback(function callback(map) {
+  const onLoad = useCallback(function callback(map: any) {
     setMap(map)
   }, [])
 
-  const onUnmount = useCallback(function callback(map) {
+  const onUnmount = useCallback(function callback(map: any) {
     setMap(null)
   }, [])
 
