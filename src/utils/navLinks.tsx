@@ -1,8 +1,7 @@
 import { RiDashboardHorizontalFill, RiEBike2Fill } from "react-icons/ri";
 import { IoSettingsOutline } from "react-icons/io5";
 import Link from "next/link";
-import { CalendarDays, CirclePlus, UsersRound, Wallet } from "lucide-react";
-import { BiSupport } from "react-icons/bi";
+import { Activity, MessageSquare, Shield, Tags, Users, UsersRound, Wallet } from "lucide-react";
 
 
 export const navLinks = [
@@ -27,14 +26,39 @@ export const navLinks = [
     ]
   },
   {
-    key: "rider-verification",
-    icon: <RiEBike2Fill size={18} />,
-    label: <Link href={"/rider-verification"}>Rider Verification</Link>,
+    key: "real-time-monitor",
+    icon: <Activity size={18} />,
+    label: <Link href={"/real-time-monitor"}>Real-Time Monitor</Link>,
   },
   {
     key: "earning",
     icon: <Wallet size={18} />,
     label: <Link href={"/earning"}>Earning</Link>,
+  },
+  {
+    key: "rider-verification",
+    icon: <RiEBike2Fill size={18} />,
+    label: <Link href={"/rider-verification"}>Rider Verification</Link>,
+  },
+  {
+    key: "fleet-zone-management",
+    icon: <Users size={18} />,
+    label: <Link href={"/fleet-zone-management"}>Fleet & Zone Management</Link>,
+  },
+  {
+    key: "incentives-loyalty",
+    icon: <Tags size={18} />,
+    label: <Link href={"/incentives-loyalty"}>Incentives & Loyalty</Link>,
+  },
+  {
+    key: "fraud-detection",
+    icon: <Shield size={18} />,
+    label: <Link href={"/fraud-detection"}>Fraud Detection</Link>,
+  },
+  {
+    key: "customer-support",
+    icon: <MessageSquare size={18} />,
+    label: <Link href={"/customer-support"}>Customer Support</Link>,
   },
   {
     key: "settings",

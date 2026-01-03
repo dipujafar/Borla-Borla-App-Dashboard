@@ -34,7 +34,7 @@ const SidebarContainer = ({ collapsed }: { collapsed: boolean }) => {
 
   return (
     <Sider
-      width={260}
+      width={320}
       theme="light"
       collapsible
       collapsed={collapsed}

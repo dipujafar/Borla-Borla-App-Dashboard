@@ -10,6 +10,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { useState } from "react";
+import { Card } from "@/components/ui/card";
 
 const data = [
   { name: "Jan", user: 100, diff: 320 - 100 },
@@ -31,7 +32,7 @@ const UserOverViewChart = () => {
     new Date().getFullYear().toString()
   );
   const [selectedUserType, setSelectedUserType] = useState<string>(
-   "User"
+    "User"
   );
 
   const yearsOption = Array(5)
@@ -58,7 +59,7 @@ const UserOverViewChart = () => {
   };
 
   return (
-    <div className="  rounded-lg p-8 w-full bg-[#fff] border  border-[#FFEDB0]/50">
+    <Card className="p-6">
       <div className="flex flex-wrap xl:flex-nowrap justify-between items-center mb-10 gap-2">
         <h1 className="text-2xl text-black/70">Users Overview</h1>
 
@@ -117,7 +118,7 @@ const UserOverViewChart = () => {
           <Bar dataKey="diff" stackId="a" fill="#FFF9E6" barSize={50} />
         </BarChart>
       </ResponsiveContainer>
-    </div>
+    </Card>
   );
 };
 

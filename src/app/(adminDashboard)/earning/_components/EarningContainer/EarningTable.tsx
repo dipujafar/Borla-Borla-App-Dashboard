@@ -2,7 +2,6 @@
 import { Input, TableProps } from "antd";
 import { useState } from "react";
 import DataTable from "@/utils/DataTable";
-import { Eye } from "lucide-react";
 import { cn } from "@/lib/utils";
 import RiderApproveModal from "@/components/(adminDashboard)/modals/RiderApprove/RiderApproveModal";
 
@@ -36,7 +35,6 @@ const data: TDataType[] = Array.from({ length: 14 }).map((data, inx) => ({
 
 
 const EarningTable = () => {
-    const [open, setOpen] = useState(false);
 
     const columns: TableProps<TDataType>["columns"] = [
         {
@@ -100,7 +98,7 @@ const EarningTable = () => {
     ];
 
     return (
-        <div className="bg-section-bg rounded-3xl border border-[#FFEDB0]/50  ">
+        <div className="bg-section-bg rounded-3xl border border-[#FFEDB0]/50 ">
             <div className="flex items-center justify-between  mb-4 mt-2 pt-2 mx-5">
                 <div className="space-y-1">
                     <h3 className="md:text-3xl text-2xl font-medium">Payments & Commission</h3>
@@ -111,7 +109,6 @@ const EarningTable = () => {
                 </div>
             </div>
             <DataTable columns={columns} data={data} pageSize={12}></DataTable>
-            <RiderApproveModal open={open} setOpen={setOpen}></RiderApproveModal>
         </div>
     );
 };

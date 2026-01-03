@@ -94,7 +94,7 @@ const RiderVerificationTable = () => {
     ];
 
     return (
-        <div className="bg-section-bg rounded-3xl border border-[#FFEDB0]/50  ">
+        <div className="bg-section-bg rounded-3xl border border-[#FFEDB0]/50">
             <div className="flex items-center justify-between  mb-4 mt-2 pt-2 mx-5">
                 <div className="space-y-1">
                     <h3 className="md:text-3xl text-2xl font-medium">Verification Requests</h3>

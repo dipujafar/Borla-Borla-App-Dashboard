@@ -12,6 +12,8 @@ type TProps = {
   icon?: React.ReactNode;
   iconColor?: string;
   iconBg?: string;
+  onlyTimeLine?: string
+  textColor?: string
 };
 
 export default function StatCard({
@@ -23,14 +25,16 @@ export default function StatCard({
   icon,
   iconColor,
   iconBg,
+  onlyTimeLine,
+  textColor
 }: TProps) {
   return (
-    <div className="flex flex-col xl:gap-y-2 gap-y-1  justify-center p-6  flex-1 bg-section-bg rounded-xl border border-[#FFEDB0]/50">
+    <div className="flex flex-col xl:gap-y-2 gap-y-1  justify-center p-6  flex-1 bg-section-bg rounded-xl border border-[#E5E7EB]/50">
       <div className={cn("flex justify-between gap-2 mb-2", !icon && "hidden")}>
         <div className={cn("p-3 rounded-md", iconBg, iconColor)}>{icon}</div>
         <div>
           <h1
-            className={cn("flex items-center ", increase ? "text-[#165940]" : "text-[#E7000B]", increase === undefined && "text-[#FEC400]")}
+            className={cn("flex items-center ", increase ? "text-[#00A63E]" : "text-[#E7000B]", increase === undefined && "text-[#FEC400]")}
           >
             <div>
               {increase ? <IncreaseIcon /> : <DecreaseIcon/>}
@@ -55,6 +59,7 @@ export default function StatCard({
         </h1>
         <h6 className="text-[#7F7F7F]">{timeLine}</h6>
       </div>
+      { onlyTimeLine && <h6 className={cn("text-[#7F7F7F]", textColor)}>{onlyTimeLine}</h6>}
     </div>
   );
 }

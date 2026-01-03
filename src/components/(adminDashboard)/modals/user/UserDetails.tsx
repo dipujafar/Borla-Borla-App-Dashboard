@@ -4,9 +4,10 @@ import { RiCloseLargeLine } from "react-icons/ri";
 type TPropsType = {
   open: boolean;
   setOpen: (collapsed: boolean) => void;
+  typeUser: string;
 };
 
-const UserDetails = ({ open, setOpen }: TPropsType) => {
+const UserDetails = ({ open, setOpen, typeUser }: TPropsType) => {
   return (
     <Modal
       open={open}
@@ -54,7 +55,7 @@ const UserDetails = ({ open, setOpen }: TPropsType) => {
           </div>
           <div className="flex justify-between bg-[#ECF2F0]  py-3 px-2">
             <h4>Account Type :</h4>
-            <p className="font-medium">User</p>
+            <p className="font-medium">{typeUser}</p>
           </div>
           <div className="flex justify-between  py-3 px-2">
             <h4>Date of Join :</h4>

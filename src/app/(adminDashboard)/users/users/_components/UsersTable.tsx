@@ -104,7 +104,7 @@ const UsersTable = () => {
                 <Input.Search placeholder="Search here..." size="large" />
             </div>
             <DataTable columns={columns} data={data} pageSize={12}></DataTable>
-            <UserDetails open={open} setOpen={setOpen}></UserDetails>
+            <UserDetails open={open} setOpen={setOpen} typeUser="User"></UserDetails>
         </div>
     );
 };

@@ -7,24 +7,28 @@ const statData = [
         title: "Total Approved",
         amount: "565",
         subtitle: "Ready to drive",
+        textColor: "text-[#155DFC]",
     },
     {
         id: 2,
         title: "Approved Today",
         amount: "35",
         subtitle: "Ready to drive",
+        textColor: "text-[#155DFC]",
     },
     {
         id: 3,
         title: "Pending Reviews",
         amount: "20",
         subtitle: "Awaiting Reviews",
+        textColor: "text-[#00A63E]",
     },
     {
         id: 4,
         title: "Rejected",
         amount: "5",
         subtitle: "Need resubmission",
+         textColor: "text-[#00A63E]",
     },
 ];
 

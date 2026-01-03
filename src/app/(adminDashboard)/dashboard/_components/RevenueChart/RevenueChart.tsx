@@ -38,7 +38,7 @@ export function RevenueChart() {
   const data = period === "weekly" ? weeklyData : monthlyData
 
   return (
-    <Card>
+    <Card className="flex-1">
       <CardHeader className="flex flex-row items-center justify-between" >
         <CardTitle className="text-xl font-semibold">Revenue</CardTitle>
         <div>
@@ -60,7 +60,7 @@ export function RevenueChart() {
               color: "hsl(var(--chart-1))",
             },
           }}
-          className="h-[240px] w-full"
+          className="h-[340px] w-full"
         >
           <AreaChart data={data} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
             <defs>
